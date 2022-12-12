@@ -1,0 +1,7 @@
+<resources>
+    <!-- MainActivity -->
+    <string name="LoginActivity_Title">Login</string>
+
+    <!-- JoinActivity -->
+    <string name="joinActivity_Title">My Application</string>
+</resources>
