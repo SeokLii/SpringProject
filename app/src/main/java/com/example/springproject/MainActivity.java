@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 
-class main extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     // Button
     Button join_btn;
     Button login_btn;
@@ -37,12 +37,12 @@ class main extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.join_btn:     // 회원가입 버튼을 눌렀을 때
-                Intent intent = new Intent(main.this, JoinActivity.class);
+                Intent intent = new Intent(this, JoinActivity.class); //MainActivity.this
                 startActivity(intent);  // 새 액티비티를 열어준다.
                 finish();               // 현재의 액티비티는 끝내준다.
                 break;
             case R.id.login_btn:    // 로그인 버튼을 눌렀을 때
-                Intent intent2 = new Intent(main.this, LoginActivity.class);
+                Intent intent2 = new Intent(this, LoginActivity.class);
                 startActivity(intent2);
                 finish();
                 break;
